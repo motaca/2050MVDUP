@@ -1,0 +1,48 @@
+https://quiz.tryinteract.com/#/preview/5ce58df3544a58001444fd07
+
+	<!-- CONTACTO -->
+	<section id="contato" class="container linha coluna centralizar">
+		<div class="faleConosco linha coluna centralizar">
+			<h2>FALE COM A GENTE</h2>
+			<div class="formularioContato">
+				<form class="contato">
+					<div class="nomeFormularioContato">
+						<label  class="formularioContato nome" for="nome">Nome</label>
+						<div>	
+							<input class="nome" type="text" name="nome" placeholder="Seu nome completo">
+						</div>	
+					</div>
+					<div class="emailFormularioContato">
+						<label class="formularioContato email" for="email">Email</label>
+						<div>	
+							<input class="email" type="email" name="email" placeholder="Seu e-mail">
+						</div>	
+					</div>
+					<div class="textoFormularioContato">	
+						<label class="formularioContato texto" for="texto">Mensagem</label>
+						<div>	
+						    <textarea class="mensagem" id="texto" name="mensagem" cols="50" rows="4" placeholder="Deixe sua mensagem aqui!"></textarea>
+						 </div>
+						 <div class="linha centralizar">
+						 <button type="submit" class="botao botaoFormularioContato" >enviar mensagem</button>
+						 </div>
+					</div>
+				</form>
+			</div>
+
+			<div class="contatoFormularioContato linha coluna centralizar">
+				<a href="">horadayoga@gmail.com</a>
+				<div class="contatoMidiasSocias linha centralizar">
+					<button class="botao facebook"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></button>
+					<button class="botao twitter"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></button>
+				</div>
+			</div>	
+		</div>		
+	</section>
+	<!-- FIM CONTATO -->
+
+#FDFDFD = #FDFDFD
+#F1693F = #dc143c
+#6b6b6b = #00bb2d
+#51F6B4 = #9500bb
+#0a0a0a

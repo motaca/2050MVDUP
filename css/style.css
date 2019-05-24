@@ -1,0 +1,523 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Raleway&display=swap');
+/* ESTILOS PADRÃO */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Fredoka One', cursive;
+	font-family: 'Raleway', sans-serif;
+}
+
+body{
+	/*color: #7E516F;*/
+	font-family: 'Raleway', sans-serif;
+	background-color: #fdfdfd;
+}
+
+a:link, a:visited, a:active{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color: none;
+}
+
+ul, li{
+	list-style: none;
+}
+
+section{
+	padding-top: 60px;
+}
+
+h2{
+	font-family: 'Fredoka One', cursive;
+	font-weight: bold;
+	color: #dc143c;
+}
+
+h1, .h1, h2, .h2, h3, .h3{
+	margin: 20px 0;
+	padding: 0;
+}
+
+#hdy, #hdb, #contato{
+	/*height: calc(100vh - 60px);*/
+	height: 100%;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fdfdfd
+}
+
+.linha{
+	display: flex;
+}
+
+.centralizar{
+	align-items: center;
+	justify-content: center;
+}
+
+.espacoEntre{
+	justify-content: space-between;
+}
+
+.alinharVertical{
+	align-items: center;
+}
+
+.coluna{
+	flex-direction: column;
+}
+
+.botao{
+	border: none;
+	text-decoration: none;
+	background: none;
+	padding: 0 7px;
+}
+
+.centralizarTexto{
+	text-align: center;
+}
+
+/* FIM ESTILOS PADRÃO */
+
+/* CABEÇALHO */
+
+#cabecalho{
+	height: 60px;
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.90);
+	width: 100%;
+	top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid #eee;
+}
+
+#containerCabecalho{
+	height: 60px;
+	align-items: baseline;
+}
+
+#cabecalho #logo{
+	height: 60px;
+}
+
+#cabecalho #logo h1{
+	padding: 0;
+	margin: 0;
+	font-family: 'Fredoka One', cursive;
+	font-size: 38px;
+	font-weight: bold;
+	color: #00bb2d;
+}
+
+
+#cabecalho #logo h1:hover{
+	color: #dc143c;
+	transition: 0.2s;
+}
+
+#menuCabecalho{
+	align-content: center;
+}
+
+#menuCabecalho a{
+	font-size: 13px;
+	padding: 0 10px;
+	color: #00bb2d;
+	height: 60px;
+}
+
+#menuCabecalho a:hover{
+	color: #dc143c;
+	transition: 0.2s;
+}
+
+#botoesCabecalho .botao{
+	color:  #00bb2d;
+}
+
+
+#botoesCabecalho .botao:hover{
+	color: #dc143c;
+	transition: 0.2s;
+}
+
+#botoesCabecalho .botaoCalendario,
+#botoesCabecalho .botaoCarrinho{
+	font-size: 19px;
+	padding: 0 15px;
+}
+
+#botoesCabecalho .botaoEntrar{
+	font-size: 13px;
+}
+
+#botoesCabecalho .boxDropdown{
+	display: none;
+}
+
+/* --- botão Entrar dropdown --- */
+.botaoEntrar {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.conteudo-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fdfdfd;
+    min-width: 130px;
+    z-index: 1;
+}
+
+.conteudo-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+.conteudo-dropdown a:hover {
+	color: #dc143c;
+}
+
+.dropdown:hover .conteudo-dropdown {
+    display: block;
+}
+
+.dropdown:hover .botaoEntrar {
+    color: #dc143c;
+}
+
+/* --- fim dropdown --- */
+
+
+/* FIM CABEÇALHO */
+
+/* SLIDER */
+
+#slider{
+	height: calc(100vh - 60px);
+	width: 100%;
+}
+
+#slideBox{
+	height: 100%;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-inner {
+	height: calc(100vh - 60px);
+}
+
+.carousel-inner .slide{
+	height: 100%;
+    width: 100%;
+}
+
+/* --- textos dos slides --- */
+
+.carousel-caption {
+	height: 100%;
+	z-index: 5;
+}
+
+.carousel-caption h1.textoLogo{
+	font-family: 'Dawning of a New Day';
+	font-size: 80px;
+	font-weight: bold;
+	color: #9500bb;
+	padding-bottom: 30px;
+}
+
+.como {
+	width: 33%;
+	padding: 15px;
+}
+
+.como h3{
+	align-items: baseline;
+	font-family: 'Fredoka One', cursive;
+	font-weight: bold;
+	font-size: 185px;
+	color: #9500bb;
+	height: 40px;
+}
+
+.como p{
+	text-align: center;
+	font-style: 'Open Sans';
+	font-size: 17px;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+.como img{
+	width: 55%;
+}
+
+.slide2Textos{
+	align-items: baseline;
+	margin-bottom: 30px;
+}
+
+/* slide 3 - missão */
+
+.tituloMissao{
+	font-family: 'Fredoka One', cursive;
+	font-size: 25px;
+	font-weight: bold;
+	color: #9500bb;
+	padding: 0;
+	margin: 0;
+}
+
+.slide3textos span{
+	font-family: 'Fredoka One', cursive;
+	font-size: 60px;
+	font-weight: bold;
+	color: #9500bb;
+	margin-bottom: 20px;
+}
+
+.slide3textos p{
+	padding: 5px;
+	text-align: center;
+	/*font-style: 'Open Sans';*/
+	font-size: 16px;
+	/*font-weight: bold;*/
+	text-shadow: none;
+	width: 85%
+}
+
+.boxBotaoMissao{
+	margin-top: 20px;
+}
+
+/* fim slide 3 - missão */
+
+/* slide 4 - hora do bem */
+
+.slide4textos i{
+	color: #dc143c;
+	text-shadow: 0 1px 12px rgb(224, 224, 224);
+}
+
+.slide4textos h2{
+	font-family: 'Fredoka One', cursive;
+	font-size: 80px;
+	font-weight: bold;
+	color: #9500bb;
+	margin:0;
+	padding-bottom: 20px;
+}
+
+.slide4textos p{
+	padding: 5px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: none;
+	width: 85%
+}
+
+/* fim slide 4 - hora do bem */
+
+.carousel-indicators li{
+	height: 14px;
+	width: 14px;
+	margin: 0 5px;
+}
+
+.carousel-indicators .active{
+	height: 16px;
+	width: 16px;
+}
+
+/* --- fim textos dos slides --- */
+
+/* --- botões do slider --- */
+	
+	.botaoSlider{
+		padding: 12px 20px;
+		margin: 20px;
+		background-color: #dc143c;
+		color: #fdfdfd;
+		border-radius: 5px;
+		/*border-bottom: 1px solid #bfbfbf;*/
+		/*border-right: 1px solid #bfbfbf;*/
+		text-shadow: none;
+		font-family: 'Open Sans';
+		font-size: 15px;
+		
+	}
+
+	.botaoSlider:hover{
+		font-weight: bold;
+		color: #fdfdfd;
+	}
+
+	.botaoSaibaMais01{
+		padding: 8px 15px;
+		margin: 10px;
+		/*background-color: #f7f7f7;*/
+		color: #fdfdfd;
+		border-bottom: 1px solid #9500bb;
+		/*border-right: 1px solid #bfbfbf;*/
+		text-shadow: none;
+		font-family: 'Open Sans';
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.botaoSaibaMais01:hover{
+		font-weight: bold;
+		color: #9500bb;
+	}
+
+/* --- fim botões do slider --- */
+
+/* FIM SLIDER */
+
+/* --- CARDS DAS PRÓXIMAS SEÇÕES --- */
+
+.card {
+	width: 28%;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+.card:hover{
+	border-bottom: 1px solid #9500bb;
+	border-right: 1px solid #9500bb;
+	background-color: #f7f7f7;
+}
+
+.card p{
+	text-align: justify;
+}
+
+.cards h3{
+	font-family: 'Fredoka One', cursive;
+	font-weight: bold;
+	color: #dc143c;
+}
+
+/* --- FIM CARDS DAS PRÓXIMAS SEÇÕES  --- */
+
+/* SEÇÃO HORA DA YOGA */
+
+#hdy{
+	border-top: 1px solid #f7f7f7;
+}
+
+.hdyContainerTexto{
+	padding-bottom: 50px;
+}
+
+.hdyContainerTexto h2{
+	/*padding-bottom: 25px;*/
+}
+
+.imagemHdy{
+	margin: 0 auto;
+}
+
+.cards img{
+	width: 60%;
+	padding: 10px;
+}
+
+#hdy .card p{
+	padding: 20px;
+}
+
+/* FIM SEÇÃO HORA DA YOGA */
+
+
+/*EXPERIENCIAS*/
+#experiencias{
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+}
+
+#experiencias h2{
+	width: 100%;
+}
+
+.containerExperiencias{
+	width: 80%;
+	align-items: baseline;
+	padding: 40px 0;
+}
+
+.containerExperiencias h3{
+	font-family: 'Fredoka One', cursive;
+	font-weight: bold;
+	color: #9500bb;
+}
+
+.containerExperiencias p{
+	color: #0000ff;
+}
+
+#experiencias.card.experiencias{
+	height: 500px;
+}
+
+#experiencias img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	filter: grayscale(100%);
+}
+
+#experiencias img:hover{
+	filter: none;
+}
+/*FIM EXPERIENCIAS*/
+
+/* RODAPE */
+
+#rodape{
+	background-color: #5275cc;	
+}
+
+.containerRodape{
+	padding: 20px 0;
+}
+
+.containerRodape span{
+	font-family: 'Fredoka One', cursive;
+	font-weight: bold;
+	font-size: 30px;
+	color: #dc143c;
+}
+
+.containerRodape p{
+	color: #fdfdfd;
+}
+
+/* FIM RODAPE */
